@@ -139,10 +139,15 @@
     border-bottom-right-radius: 50px;
     background-color: #fbfbfb;
     padding: 18px;
+    transition: 0.5s all;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &:hover {
+      background-color: #f5f6f7;
+    }
 
     img {
       width: 48px;
