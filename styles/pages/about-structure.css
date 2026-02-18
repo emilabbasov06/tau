@@ -1,0 +1,363 @@
+.about-structure {
+  margin-top: 120px;
+}
+
+.directory {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 88px;
+    letter-spacing: 0%;
+    color: #121212;
+  }
+
+  .directors {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .director {
+      display: flex;
+      gap: 24px;
+
+      .director-card {
+        width: 486px;
+        height: 681px;
+        max-width: 486px;
+        max-height: 681px;
+        border-radius: 20px;
+        background: #2b3989;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .director-card-content {
+          width: 361px;
+          height: 555px;
+          max-width: 361px;
+          max-height: 555px;
+
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+
+          .director-card-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+
+            img {
+              width: 240px;
+              height: 240px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            .director-info {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 16px;
+
+              h4 {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 38px;
+                letter-spacing: 0%;
+                color: #ffffff;
+              }
+
+              p {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 38px;
+                letter-spacing: 0%;
+                color: #ffffff;
+              }
+            }
+          }
+
+          .director-card-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+
+            .director-email,
+            .director-phone {
+              width: 361px;
+              height: 56px;
+              max-width: 361px;
+              max-height: 56px;
+              border-radius: 10px;
+              background-color: #9b88c645;
+              padding-inline: 18px;
+
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              img {
+                width: 20px;
+                height: 20px;
+              }
+
+              p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 15px;
+                letter-spacing: 0%;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+
+      .why-tau {
+        width: 689px;
+        height: 590px;
+        max-width: 689px;
+        max-height: 590px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        h3 {
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 38px;
+          letter-spacing: 0%;
+          color: #000000;
+        }
+
+        p,
+        li {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0%;
+          color: #000000;
+        }
+
+        ul {
+          list-style-type: square;
+          list-style-position: inside;
+        }
+      }
+    }
+  }
+}
+
+.programs-container {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 88px;
+    letter-spacing: 0%;
+    color: #121212;
+  }
+
+  .programs {
+    display: grid;
+    grid-template-columns: repeat(4, 282px);
+    gap: 24px;
+
+    .program {
+      width: 282px;
+      height: 278px;
+      max-width: 282px;
+      max-height: 278px;
+      border-radius: 20px;
+      background: #f5fbff;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .program-contents {
+        width: 243px;
+        height: 232px;
+        max-width: 243px;
+        max-height: 232px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .profession {
+          max-width: 211px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: -1.1%;
+          color: #874fff;
+        }
+
+        .info {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          .professor-image {
+            img {
+              width: 60px;
+              height: 60px;
+              opacity: 1;
+              border: 4px dashed #cccccc;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+
+          .professor-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            p {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 150%;
+              letter-spacing: -1.1%;
+              color: #b3b3b3;
+            }
+          }
+        }
+
+        .description {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: 0%;
+        }
+      }
+    }
+  }
+}
+
+.edu-department,
+.accounting-department {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 120px;
+
+  h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 88px;
+    letter-spacing: 0%;
+    color: #121212;
+  }
+
+  .department-elements {
+    display: flex;
+    flex-direction: column;
+
+    .department-element {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+
+      .card {
+        width: 282px;
+        height: 278px;
+        max-width: 282px;
+        max-height: 278px;
+        border-radius: 20px;
+        background: #f5fbff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .card-contents {
+          width: 243px;
+          height: 232px;
+          max-width: 243px;
+          max-height: 232px;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .profession {
+            max-width: 211px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: -1.1%;
+            color: #874fff;
+          }
+
+          .info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .professor-image {
+              img {
+                width: 60px;
+                height: 60px;
+                opacity: 1;
+                border: 4px dashed #cccccc;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+            }
+
+            .professor-info {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+
+              p {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: -1.1%;
+                color: #b3b3b3;
+              }
+            }
+          }
+
+          .description {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            letter-spacing: 0%;
+          }
+        }
+      }
+
+      .department-element-contents {
+        width: 894px;
+        height: 252px;
+        max-width: 894px;
+        max-height: 252px;
+        opacity: 1;
+
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 0%;
+          color: #212121;
+        }
+      }
+    }
+  }
+}

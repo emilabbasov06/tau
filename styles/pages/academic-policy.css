@@ -1,0 +1,32 @@
+.academic-policy {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .policy-red {
+    border-radius: 8px;
+    border: 1px solid #d63832;
+    backdrop-filter: blur(4px);
+    padding: 28px;
+    background-color: #d63832;
+
+    h2,
+    p {
+      color: #ffffff;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 45px;
+      letter-spacing: 0%;
+    }
+  }
+}
