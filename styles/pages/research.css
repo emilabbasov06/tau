@@ -14,7 +14,7 @@
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(2, 588px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 
     .project {
