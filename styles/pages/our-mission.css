@@ -1,0 +1,127 @@
+.our-mission {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 87px;
+
+  .official-order {
+    margin-top: 100px;
+    border-radius: 8px;
+    border: 1px solid #d63832;
+    backdrop-filter: blur(4px);
+    padding: 28px;
+    background-color: #d63832;
+
+    h2,
+    p {
+      color: #ffffff;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 45px;
+      letter-spacing: 0%;
+    }
+  }
+
+  .our-mission-container {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .our-missions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 23px;
+      width: 100%;
+      margin: 0 auto;
+
+      .our-mission-element {
+        width: 588px;
+        height: 192px;
+        max-width: 588px;
+        max-height: 192px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background: #fbfbfb;
+
+        &:nth-of-type(1) .left {
+          background: #deeafd;
+        }
+        &:nth-of-type(2) .left {
+          background: #8a36f133;
+        }
+        &:nth-of-type(3) .left {
+          background: #c7890b33;
+        }
+        &:nth-of-type(4) .left {
+          background: #3ea24b33;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .our-mission-element-contents {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+
+          .left {
+            min-width: 60px;
+            height: 60px;
+            border-radius: 6px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+          .right {
+            width: 426px;
+            min-width: 426px;
+            height: 112px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h3 {
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 48px;
+              letter-spacing: 0.28%;
+              color: #212121;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 24px;
+              letter-spacing: 0.15%;
+              color: #616161;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .our-vision,
+  .prespectives {
+    margin-top: 120px;
+  }
+}

@@ -257,3 +257,25 @@ footer {
     object-fit: cover;
   }
 }
+
+.simple-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 88px;
+    letter-spacing: 0%;
+    color: #121212;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #212121;
+  }
+}
