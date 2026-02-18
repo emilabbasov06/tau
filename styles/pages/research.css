@@ -1,0 +1,216 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 84px;
+
+  h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    color: #000000;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 588px);
+    gap: 24px;
+
+    .project {
+      width: 588px;
+      height: 1009px;
+      max-width: 588px;
+      max-height: 1009px;
+      border-radius: 20px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &:nth-of-type(1) {
+        border: 1px solid #2464f3;
+      }
+      &:nth-of-type(2) {
+        border: 1px solid #8a36f1;
+      }
+      &:nth-of-type(3) {
+        border: 1px solid #d63832;
+      }
+      &:nth-of-type(4) {
+        border: 1px solid #c7890b;
+      }
+
+      .project-image {
+        width: 587px;
+        height: 372px;
+        max-width: 587px;
+        max-height: 372px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+      }
+
+      .main-info,
+      .achievements,
+      .partners-container {
+        padding-inline: 20px;
+      }
+
+      .main-info {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .project-tag {
+          width: 153px;
+          height: 24px;
+          border-radius: 10px;
+          background: #edeff2;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0%;
+          text-align: center;
+          color: #212121;
+        }
+
+        .project-header {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          h3 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: 0%;
+            color: #212121;
+          }
+
+          .professor-name {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            color: #4c5564;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 0%;
+            color: #212121;
+          }
+        }
+
+        .short-infos {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .info {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 20px;
+              letter-spacing: 0%;
+              text-align: center;
+              color: #4c5564;
+            }
+
+            span {
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 20px;
+              letter-spacing: 0%;
+              text-align: right;
+              color: #212121;
+            }
+          }
+        }
+      }
+
+      .achievements,
+      .partners-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        h4 {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 38px;
+          letter-spacing: 0%;
+          color: #212121;
+        }
+      }
+
+      .achievements {
+        margin-bottom: 31px;
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+
+          li {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #4c5564;
+          }
+        }
+      }
+
+      .partners-container {
+        .partners {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          .partner {
+            width: 76px;
+            height: 24px;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #212121;
+          }
+        }
+      }
+    }
+  }
+}
