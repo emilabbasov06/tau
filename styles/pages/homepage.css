@@ -258,6 +258,7 @@
         min-width: 399px;
         min-height: 422px;
         border-radius: 25px;
+        object-fit: cover;
       }
 
       p {
