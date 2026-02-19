@@ -447,6 +447,7 @@
           border: none;
           border-radius: 16px;
           box-shadow: 4px 11px 35px 0px #00000012;
+          object-fit: cover;
         }
 
         .program-content {
