@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/layout.css" />
     <link rel="stylesheet" href="styles/components.css" />
-    <link rel="stylesheet" href="styles/pages/board-of-trustees.css" />
-    <title>TAU - Haqqımızda(Himayəçilər şurası)</title>
+    <link rel="stylesheet" href="styles/pages/academic-calendar.css" />
+    <title>TAU - Haqqımızda(Akademik təqvim)</title>
   </head>
   <body class="container-fluid">
     <header class="container-fluid">
@@ -156,192 +156,184 @@
     </header>
 
     <section class="breadcrumb container-fluid">
-      <img src="images/about-history/breadcrumb.jpg" alt="Breadcrumb" />
+      <img src="images/academic-council/breadcrumb.jpg" alt="Breadcrumb" />
     </section>
 
-    <section class="board-of-trustees container">
-      <div class="board-of-trustees-header simple-paragraph">
-        <h2>Himayəçilər şurası</h2>
-        <p>
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-          qui dolorem eum fugiat quo voluptas nulla pariatur?
-        </p>
-      </div>
+    <section class="academic-calendar container">
+      <h3>Akademik təqvim</h3>
 
-      <div class="trustees">
-        <div class="trustee">
-          <div class="trustee-contents">
-            <p class="profession">
-              Türkiyə Respublikası Ali Təhsil Şurasının (YÖK) sədri
-            </p>
-
-            <div class="info">
-              <div class="trustee-image">
-                <img
-                  src="images/about-trustees/professor.jpg"
-                  alt="Professor"
-                />
+      <div class="calendar-filters">
+        <div class="filter-wrapper" id="semester-filter">
+          <div class="filter-all">
+            <div class="texts">
+              <div class="label-row">
+                <span class="label-text">Akademik il</span>
               </div>
-
-              <div class="professor-info">
-                <p>Prof.dr. Erol.Özvar</p>
-                <p>email@gmail.com</p>
-              </div>
+              <div class="selected-value">Hamısı</div>
             </div>
+            <div class="icon-wrapper">
+              <img src="icons/arrow-down.svg" alt="arrow" />
+            </div>
+          </div>
 
-            <p class="description">
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam,
-            </p>
+          <div class="options-menu">
+            <div class="option" data-value="payiz">2026</div>
+            <div class="option" data-value="yaz">2025</div>
+            <div class="option" data-value="yay">2024</div>
           </div>
         </div>
 
-        <div class="trustee">
-          <div class="trustee-contents">
-            <p class="profession">
-              Türkiyə Respublikası Ali Təhsil Şurasının (YÖK) sədri
-            </p>
-
-            <div class="info">
-              <div class="trustee-image">
-                <img
-                  src="images/about-trustees/professor.jpg"
-                  alt="Professor"
-                />
+        <div class="filter-wrapper" id="semester-filter">
+          <div class="filter-all">
+            <div class="texts">
+              <div class="label-row">
+                <span class="label-text">Semestr</span>
               </div>
-
-              <div class="professor-info">
-                <p>Prof.dr. Erol.Özvar</p>
-                <p>email@gmail.com</p>
-              </div>
+              <div class="selected-value">Hamısı</div>
             </div>
+            <div class="icon-wrapper">
+              <img src="icons/arrow-down.svg" alt="arrow" />
+            </div>
+          </div>
 
-            <p class="description">
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam,
-            </p>
+          <div class="options-menu">
+            <div class="option" data-value="payiz">Payız</div>
+            <div class="option" data-value="yaz">Yaz</div>
+            <div class="option" data-value="yay">Yay</div>
           </div>
         </div>
 
-        <div class="trustee">
-          <div class="trustee-contents">
-            <p class="profession">
-              Türkiyə Respublikası Ali Təhsil Şurasının (YÖK) sədri
-            </p>
-
-            <div class="info">
-              <div class="trustee-image">
-                <img
-                  src="images/about-trustees/professor.jpg"
-                  alt="Professor"
-                />
+        <div class="filter-wrapper" id="degree-filter">
+          <div class="filter-all">
+            <div class="texts">
+              <div class="label-row">
+                <span class="label-text">Tədris pilləsi</span>
               </div>
-
-              <div class="professor-info">
-                <p>Prof.dr. Erol.Özvar</p>
-                <p>email@gmail.com</p>
-              </div>
+              <div class="selected-value">Hamısı</div>
             </div>
-
-            <p class="description">
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam,
-            </p>
+            <div class="icon-wrapper">
+              <img src="icons/arrow-down.svg" alt="arrow" />
+            </div>
+          </div>
+          <div class="options-menu">
+            <div class="option" data-value="bakalavr">Bakalavr</div>
+            <div class="option" data-value="magistratura">Magistratura</div>
+            <div class="option" data-value="doktorantura">Doktorantura</div>
           </div>
         </div>
 
-        <div class="trustee">
-          <div class="trustee-contents">
-            <p class="profession">
-              Türkiyə Respublikası Ali Təhsil Şurasının (YÖK) sədri
-            </p>
-
-            <div class="info">
-              <div class="trustee-image">
-                <img
-                  src="images/about-trustees/professor.jpg"
-                  alt="Professor"
-                />
+        <div class="filter-wrapper" id="faculty-filter">
+          <div class="filter-all">
+            <div class="texts">
+              <div class="label-row">
+                <span class="label-text">Fakültə</span>
               </div>
-
-              <div class="professor-info">
-                <p>Prof.dr. Erol.Özvar</p>
-                <p>email@gmail.com</p>
-              </div>
+              <div class="selected-value">Hamısı</div>
             </div>
-
-            <p class="description">
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam,
-            </p>
+            <div class="icon-wrapper">
+              <img src="icons/arrow-down.svg" alt="arrow" />
+            </div>
+          </div>
+          <div class="options-menu">
+            <div class="option" data-value="it">
+              İnformasiya Texnologiyaları
+            </div>
+            <div class="option" data-value="biznes">
+              Biznesin idarə edilməsi
+            </div>
+            <div class="option" data-value="muhendislik">Mühəndislik</div>
+            <div class="option" data-value="iqtisadiyyat">İqtisadiyyat</div>
           </div>
         </div>
 
-        <div class="trustee">
-          <div class="trustee-contents">
-            <p class="profession">
-              Türkiyə Respublikası Ali Təhsil Şurasının (YÖK) sədri
-            </p>
-
-            <div class="info">
-              <div class="trustee-image">
-                <img
-                  src="images/about-trustees/professor.jpg"
-                  alt="Professor"
-                />
+        <div class="filter-wrapper" id="format-filter">
+          <div class="filter-all">
+            <div class="texts">
+              <div class="label-row">
+                <span class="label-text">Tədris forması</span>
               </div>
-
-              <div class="professor-info">
-                <p>Prof.dr. Erol.Özvar</p>
-                <p>email@gmail.com</p>
-              </div>
+              <div class="selected-value">Hamısı</div>
             </div>
-
-            <p class="description">
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam,
-            </p>
+            <div class="icon-wrapper">
+              <img src="icons/arrow-down.svg" alt="arrow" />
+            </div>
+          </div>
+          <div class="options-menu">
+            <div class="option" data-value="eyani">Əyani</div>
+            <div class="option" data-value="qiyabi">Qiyabi</div>
+            <div class="option" data-value="distant">Distant</div>
           </div>
         </div>
 
-        <div class="trustee">
-          <div class="trustee-contents">
-            <p class="profession">
-              Türkiyə Respublikası Ali Təhsil Şurasının (YÖK) sədri
-            </p>
-
-            <div class="info">
-              <div class="trustee-image">
-                <img
-                  src="images/about-trustees/professor.jpg"
-                  alt="Professor"
-                />
+        <div class="filter-wrapper" id="event-type-filter">
+          <div class="filter-all">
+            <div class="texts">
+              <div class="label-row">
+                <span class="label-text">Tədbir növü</span>
               </div>
-
-              <div class="professor-info">
-                <p>Prof.dr. Erol.Özvar</p>
-                <p>email@gmail.com</p>
-              </div>
+              <div class="selected-value">Hamısı</div>
             </div>
-
-            <p class="description">
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam,
-            </p>
+            <div class="icon-wrapper">
+              <img src="icons/arrow-down.svg" alt="arrow" />
+            </div>
+          </div>
+          <div class="options-menu">
+            <div class="option" data-value="imtahan">İmtahan sessiyası</div>
+            <div class="option" data-value="tetil">Akademik tətil</div>
+            <div class="option" data-value="qeydiyyat">Qeydiyyat dövrü</div>
+            <div class="option" data-value="tedris">Tədris müddəti</div>
           </div>
         </div>
       </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Fənn adı</th>
+            <th>Tarix</th>
+            <th>Qalan gün</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              Fakülteler Tarafından Güz Yarıyılı Ders Programlarının ÖİDB´ye Son
+              Bildirilme Tarihi
+            </td>
+            <td>12.09.2026</td>
+            <td>34 gün</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              Fakülteler Tarafından Güz Yarıyılı Ders Programlarının ÖİDB´ye Son
+              Bildirilme Tarihi
+            </td>
+            <td>12.09.2026</td>
+            <td>34 gün</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              Fakülteler Tarafından Güz Yarıyılı Ders Programlarının ÖİDB´ye Son
+              Bildirilme Tarihi
+            </td>
+            <td>12.09.2026</td>
+            <td>34 gün</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              Fakülteler Tarafından Güz Yarıyılı Ders Programlarının ÖİDB´ye Son
+              Bildirilme Tarihi
+            </td>
+            <td>12.09.2026</td>
+            <td>34 gün</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <footer class="container-fluid">
@@ -482,5 +474,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="utils/academic-calendar-filters.js"></script>
   </body>
 </html>

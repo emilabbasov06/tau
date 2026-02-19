@@ -1,0 +1,469 @@
+.directory {
+  margin-top: 120px;
+
+  .directors {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .director {
+      display: flex;
+      gap: 24px;
+
+      .director-card {
+        width: 486px;
+        height: 681px;
+        max-width: 486px;
+        max-height: 681px;
+        border-radius: 20px;
+        background: #2b3989;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .director-card-content {
+          width: 361px;
+          height: 555px;
+          max-width: 361px;
+          max-height: 555px;
+
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+
+          .director-card-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+
+            img {
+              width: 240px;
+              height: 240px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            .director-info {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 16px;
+
+              h4 {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 38px;
+                letter-spacing: 0%;
+                color: #ffffff;
+              }
+
+              p {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 38px;
+                letter-spacing: 0%;
+                color: #ffffff;
+              }
+            }
+          }
+
+          .director-card-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+
+            .director-email,
+            .director-phone {
+              width: 361px;
+              height: 56px;
+              max-width: 361px;
+              max-height: 56px;
+              border-radius: 10px;
+              background-color: #9b88c645;
+              padding-inline: 18px;
+
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              img {
+                width: 20px;
+                height: 20px;
+              }
+
+              p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 15px;
+                letter-spacing: 0%;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+
+      .why-tau {
+        width: 689px;
+        height: 590px;
+        max-width: 689px;
+        max-height: 590px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        h3 {
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 38px;
+          letter-spacing: 0%;
+          color: #000000;
+        }
+
+        p,
+        li {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0%;
+          color: #000000;
+        }
+
+        ul {
+          list-style-type: square;
+          list-style-position: inside;
+        }
+      }
+    }
+  }
+}
+
+.managers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 120px;
+
+  h3 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    color: #000000;
+  }
+
+  .managers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    .manager {
+      width: 384px;
+      height: 464px;
+      max-width: 384px;
+      max-height: 464px;
+      border-radius: 20px;
+      background: #2b3989;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .manager-card-content {
+        width: 336px;
+        height: 416px;
+        max-width: 336px;
+        max-height: 416px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .manager-header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 40px;
+
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .manager-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            h4 {
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 38px;
+              letter-spacing: 0%;
+              color: #ffffff;
+            }
+
+            p {
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 38px;
+              letter-spacing: 0%;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .manager-card-contact {
+          display: flex;
+          flex-direction: column;
+          gap: 13px;
+
+          .manager-email,
+          .manager-phone {
+            width: 335px;
+            height: 56px;
+            max-width: 335px;
+            max-height: 56px;
+            border-radius: 10px;
+            background-color: #9b88c645;
+            padding-inline: 18px;
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+              width: 20px;
+              height: 20px;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 15px;
+              letter-spacing: 0%;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.teachers-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  background: #f9fafb;
+  padding-block: 40px;
+
+  .teachers-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h3 {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 38px;
+      letter-spacing: 0%;
+      color: #000000;
+    }
+
+    .teachers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+
+      .teacher {
+        width: 384px;
+        height: 167px;
+        max-width: 384px;
+        max-height: 167px;
+        border-radius: 20px;
+        border: 1px solid #e5e5e5;
+        background: #ffffff;
+        padding: 17px;
+
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+
+        .teacher-image {
+          img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+          }
+        }
+
+        .teacher-info {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          .teacher-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            h4 {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 26px;
+              letter-spacing: 0%;
+              color: #212121;
+            }
+
+            span {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 19px;
+              letter-spacing: 0%;
+              color: #2464f3;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 19px;
+              letter-spacing: 0%;
+              color: #4c5564;
+            }
+          }
+
+          .teacher-contact {
+            ul {
+              list-style: none;
+              display: flex;
+              align-items: center;
+              gap: 20px;
+
+              li {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 15px;
+                letter-spacing: 0%;
+                color: #4c5564;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.lab-teachers {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 120px;
+
+  h3 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    color: #000000;
+  }
+
+  .teachers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    .teacher {
+      width: 384px;
+      height: 167px;
+      max-width: 384px;
+      max-height: 167px;
+      border-radius: 20px;
+      border: 1px solid #e5e5e5;
+      background: #ffffff;
+      padding: 17px;
+
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+
+      .teacher-image {
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+
+      .teacher-info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .teacher-content {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          h4 {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0%;
+            color: #212121;
+          }
+
+          span {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 19px;
+            letter-spacing: 0%;
+            color: #2464f3;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 19px;
+            letter-spacing: 0%;
+            color: #4c5564;
+          }
+        }
+
+        .teacher-contact {
+          ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            li {
+              display: flex;
+              align-items: center;
+              gap: 6px;
+
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 15px;
+              letter-spacing: 0%;
+              color: #4c5564;
+            }
+          }
+        }
+      }
+    }
+  }
+}

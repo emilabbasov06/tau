@@ -342,3 +342,53 @@ footer {
     }
   }
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+
+  thead {
+    height: 44px;
+
+    th {
+      padding: 0 16px;
+      height: 44px;
+
+      text-align: left;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0%;
+      color: #171923;
+      white-space: nowrap;
+      background: #eff4f8;
+
+      &:first-child {
+        border-radius: 8px 0px 0px 0px;
+      }
+
+      &:last-child {
+        border-radius: 0px 8px 0px 0px;
+      }
+    }
+  }
+
+  tbody {
+    td {
+      padding: 16px;
+      border-bottom: 1px solid #eff4f8;
+      border-right: 1px solid #eff4f8;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0%;
+      color: #2d3748;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
