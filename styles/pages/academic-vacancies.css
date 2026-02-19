@@ -1,0 +1,36 @@
+.breadcrumb {
+  &.background {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
+      url(../../images/academic-council/breadcrumb.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 456px;
+    max-height: 456px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 83px 119px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 88px;
+      letter-spacing: 0%;
+      color: #ffffff;
+    }
+
+    p {
+      width: 639px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: #ffffff;
+    }
+  }
+}
+
+.vacancies {
+  margin-top: 120px;
+}
