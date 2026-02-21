@@ -1,0 +1,109 @@
+.student-clubs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 120px;
+
+  h3 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    color: #212121;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #212121;
+  }
+
+  .clubs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+
+    .club {
+      width: 384px;
+      height: 408px;
+      max-width: 384px;
+      max-height: 408px;
+      opacity: 1;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      padding: 20px;
+
+      & > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: #21212180;
+        z-index: 2;
+      }
+
+      .club-content {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #ffffff;
+
+        .club-info {
+          h3 {
+            a {
+              font-weight: 500;
+              font-size: 36px;
+              line-height: 38px;
+              letter-spacing: 0%;
+              color: #ffffff;
+              text-decoration: none;
+            }
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: #ffffff;
+          }
+        }
+
+        a {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0%;
+          color: #ffffff;
+          text-decoration: none;
+
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
