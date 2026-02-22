@@ -255,6 +255,7 @@ footer {
     height: 456px;
     max-height: 456px;
     object-fit: cover;
+    display: block;
   }
 }
 

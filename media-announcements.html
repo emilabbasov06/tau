@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/layout.css" />
     <link rel="stylesheet" href="styles/components.css" />
-    <link rel="stylesheet" href="styles/pages/academic-calendar.css" />
-    <title>TAU - Akademik(Akademik təqvim)</title>
+    <link rel="stylesheet" href="styles/pages/media.css" />
+    <title>TAU - Elanlar</title>
   </head>
   <body class="container-fluid">
     <header class="container-fluid">
@@ -162,184 +162,302 @@
     </header>
 
     <section class="breadcrumb container-fluid">
-      <img src="images/academic-council/breadcrumb.jpg" alt="Breadcrumb" />
+      <img src="images/media/breadcrumb.jpg" alt="Breadcrumb" />
     </section>
 
-    <section class="academic-calendar container">
-      <h3>Akademik təqvim</h3>
+    <section class="media container">
+      <div class="media-header">
+        <h2>Elanlar</h2>
 
-      <div class="calendar-filters">
-        <div class="filter-wrapper" id="semester-filter">
-          <div class="filter-all">
-            <div class="texts">
-              <div class="label-row">
-                <span class="label-text">Akademik il</span>
+        <div class="media-filters">
+          <div class="selection-container filter-date">
+            <div class="selection-header">
+              <img src="icons/calendar-black-bg.svg" alt="Tarix" />
+              Tarix Filteri
+              <img src="icons/chevron-down.svg" alt="Ox" />
+            </div>
+            <div class="selection-options">
+              <div class="option">
+                <input type="checkbox" name="y2026" id="y2026" />
+                <label for="y2026">2026</label>
               </div>
-              <div class="selected-value">Hamısı</div>
-            </div>
-            <div class="icon-wrapper">
-              <img src="icons/arrow-down.svg" alt="arrow" />
-            </div>
-          </div>
-
-          <div class="options-menu">
-            <div class="option" data-value="payiz">2026</div>
-            <div class="option" data-value="yaz">2025</div>
-            <div class="option" data-value="yay">2024</div>
-          </div>
-        </div>
-
-        <div class="filter-wrapper" id="semester-filter">
-          <div class="filter-all">
-            <div class="texts">
-              <div class="label-row">
-                <span class="label-text">Semestr</span>
+              <div class="option">
+                <input type="checkbox" name="y2025" id="y2025" />
+                <label for="y2025">2025</label>
               </div>
-              <div class="selected-value">Hamısı</div>
-            </div>
-            <div class="icon-wrapper">
-              <img src="icons/arrow-down.svg" alt="arrow" />
             </div>
           </div>
 
-          <div class="options-menu">
-            <div class="option" data-value="payiz">Payız</div>
-            <div class="option" data-value="yaz">Yaz</div>
-            <div class="option" data-value="yay">Yay</div>
-          </div>
-        </div>
-
-        <div class="filter-wrapper" id="degree-filter">
-          <div class="filter-all">
-            <div class="texts">
-              <div class="label-row">
-                <span class="label-text">Tədris pilləsi</span>
+          <div class="selection-container filter-media">
+            <div class="selection-header">
+              Media Növü
+              <img src="icons/chevron-down.svg" alt="Ox" />
+            </div>
+            <div class="selection-options">
+              <div class="option">
+                <input type="radio" name="media-type" id="news" checked />
+                <label for="news">Xəbərlər</label>
               </div>
-              <div class="selected-value">Hamısı</div>
-            </div>
-            <div class="icon-wrapper">
-              <img src="icons/arrow-down.svg" alt="arrow" />
-            </div>
-          </div>
-          <div class="options-menu">
-            <div class="option" data-value="bakalavr">Bakalavr</div>
-            <div class="option" data-value="magistratura">Magistratura</div>
-            <div class="option" data-value="doktorantura">Doktorantura</div>
-          </div>
-        </div>
-
-        <div class="filter-wrapper" id="faculty-filter">
-          <div class="filter-all">
-            <div class="texts">
-              <div class="label-row">
-                <span class="label-text">Fakültə</span>
+              <div class="option">
+                <input type="radio" name="media-type" id="ads" />
+                <label for="ads">Elanlar</label>
               </div>
-              <div class="selected-value">Hamısı</div>
-            </div>
-            <div class="icon-wrapper">
-              <img src="icons/arrow-down.svg" alt="arrow" />
-            </div>
-          </div>
-          <div class="options-menu">
-            <div class="option" data-value="it">
-              İnformasiya Texnologiyaları
-            </div>
-            <div class="option" data-value="biznes">
-              Biznesin idarə edilməsi
-            </div>
-            <div class="option" data-value="muhendislik">Mühəndislik</div>
-            <div class="option" data-value="iqtisadiyyat">İqtisadiyyat</div>
-          </div>
-        </div>
-
-        <div class="filter-wrapper" id="format-filter">
-          <div class="filter-all">
-            <div class="texts">
-              <div class="label-row">
-                <span class="label-text">Tədris forması</span>
+              <div class="option">
+                <input type="radio" name="media-type" id="events" />
+                <label for="events">Tədbirlər</label>
               </div>
-              <div class="selected-value">Hamısı</div>
             </div>
-            <div class="icon-wrapper">
-              <img src="icons/arrow-down.svg" alt="arrow" />
-            </div>
-          </div>
-          <div class="options-menu">
-            <div class="option" data-value="eyani">Əyani</div>
-            <div class="option" data-value="qiyabi">Qiyabi</div>
-            <div class="option" data-value="distant">Distant</div>
-          </div>
-        </div>
-
-        <div class="filter-wrapper" id="event-type-filter">
-          <div class="filter-all">
-            <div class="texts">
-              <div class="label-row">
-                <span class="label-text">Tədbir növü</span>
-              </div>
-              <div class="selected-value">Hamısı</div>
-            </div>
-            <div class="icon-wrapper">
-              <img src="icons/arrow-down.svg" alt="arrow" />
-            </div>
-          </div>
-          <div class="options-menu">
-            <div class="option" data-value="imtahan">İmtahan sessiyası</div>
-            <div class="option" data-value="tetil">Akademik tətil</div>
-            <div class="option" data-value="qeydiyyat">Qeydiyyat dövrü</div>
-            <div class="option" data-value="tedris">Tədris müddəti</div>
           </div>
         </div>
       </div>
 
-      <table>
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>Fənn adı</th>
-            <th>Tarix</th>
-            <th>Qalan gün</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>
-              Fakülteler Tarafından Güz Yarıyılı Ders Programlarının ÖİDB´ye Son
-              Bildirilme Tarihi
-            </td>
-            <td>12.09.2026</td>
-            <td>34 gün</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>
-              Fakülteler Tarafından Güz Yarıyılı Ders Programlarının ÖİDB´ye Son
-              Bildirilme Tarihi
-            </td>
-            <td>12.09.2026</td>
-            <td>34 gün</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>
-              Fakülteler Tarafından Güz Yarıyılı Ders Programlarının ÖİDB´ye Son
-              Bildirilme Tarihi
-            </td>
-            <td>12.09.2026</td>
-            <td>34 gün</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>
-              Fakülteler Tarafından Güz Yarıyılı Ders Programlarının ÖİDB´ye Son
-              Bildirilme Tarihi
-            </td>
-            <td>12.09.2026</td>
-            <td>34 gün</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="media-content">
+        <div class="media-elements">
+          <div class="media-element">
+            <div class="media-image">
+              <img src="images/media/media1.jpg" alt="Media 1" />
+            </div>
+            <div class="media-element-content">
+              <h3>
+                <a href="single-announcement.html"
+                  >TAU beynəlxalq akkreditasiya aldı</a
+                >
+              </h3>
+              <p>
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.
+              </p>
+            </div>
+          </div>
+
+          <div class="media-element">
+            <div class="media-image">
+              <img src="images/media/media2.jpg" alt="Media 2" />
+            </div>
+            <div class="media-element-content">
+              <h3>
+                <a href="single-announcement.html"
+                  >TAU beynəlxalq akkreditasiya aldı</a
+                >
+              </h3>
+              <p>
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.
+              </p>
+            </div>
+          </div>
+
+          <div class="media-element">
+            <div class="media-image">
+              <img src="images/media/media3.jpg" alt="Media 3" />
+            </div>
+            <div class="media-element-content">
+              <h3>
+                <a href="single-announcement.html"
+                  >TAU beynəlxalq akkreditasiya aldı</a
+                >
+              </h3>
+              <p>
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.
+              </p>
+            </div>
+          </div>
+
+          <div class="media-element">
+            <div class="media-image">
+              <img src="images/media/media1.jpg" alt="Media 1" />
+            </div>
+            <div class="media-element-content">
+              <h3>
+                <a href="single-announcement.html"
+                  >TAU beynəlxalq akkreditasiya aldı</a
+                >
+              </h3>
+              <p>
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.
+              </p>
+            </div>
+          </div>
+
+          <div class="media-element">
+            <div class="media-image">
+              <img src="images/media/media2.jpg" alt="Media 2" />
+            </div>
+            <div class="media-element-content">
+              <h3>
+                <a href="single-announcement.html"
+                  >TAU beynəlxalq akkreditasiya aldı</a
+                >
+              </h3>
+              <p>
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.
+              </p>
+            </div>
+          </div>
+
+          <div class="media-element">
+            <div class="media-image">
+              <img src="images/media/media3.jpg" alt="Media 3" />
+            </div>
+            <div class="media-element-content">
+              <h3>
+                <a href="single-announcement.html"
+                  >TAU beynəlxalq akkreditasiya aldı</a
+                >
+              </h3>
+              <p>
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a class="media-learn-more" href="media-announcements.html">Daha çox</a>
+      </div>
+    </section>
+
+    <section class="media container">
+      <div class="media-header">
+        <h2>Tədbirlər</h2>
+
+        <div class="media-filters">
+          <div class="selection-container filter-date">
+            <div class="selection-header">
+              <img src="icons/calendar-black-bg.svg" alt="Tarix" />
+              Tarix Filteri
+              <img src="icons/chevron-down.svg" alt="Ox" />
+            </div>
+            <div class="selection-options">
+              <div class="option">
+                <input type="checkbox" name="y2026" id="y2026" />
+                <label for="y2026">2026</label>
+              </div>
+              <div class="option">
+                <input type="checkbox" name="y2025" id="y2025" />
+                <label for="y2025">2025</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="selection-container filter-media">
+            <div class="selection-header">
+              Media Növü
+              <img src="icons/chevron-down.svg" alt="Ox" />
+            </div>
+            <div class="selection-options">
+              <div class="option">
+                <input type="radio" name="media-type" id="news" checked />
+                <label for="news">Xəbərlər</label>
+              </div>
+              <div class="option">
+                <input type="radio" name="media-type" id="ads" />
+                <label for="ads">Elanlar</label>
+              </div>
+              <div class="option">
+                <input type="radio" name="media-type" id="events" />
+                <label for="events">Tədbirlər</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="media-content">
+        <div class="media-elements">
+          <div class="event">
+            <div class="event-header">
+              <img src="images/media/event.jpg" alt="Event" />
+              <div class="date">
+                <div class="date-content">
+                  <h2>20</h2>
+                  <p>NOV</p>
+                </div>
+                <div class="save">
+                  <img src="icons/save.svg" alt="Save Icon" />
+                </div>
+              </div>
+            </div>
+
+            <div class="event-content">
+              <span>MOBILE APP</span>
+              <h3>
+                <a href="single-event.html"
+                  >Global Android Programmer Meetup 2020</a
+                >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco
+              </p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="event-header">
+              <img src="images/media/event.jpg" alt="Event" />
+              <div class="date">
+                <div class="date-content">
+                  <h2>20</h2>
+                  <p>NOV</p>
+                </div>
+                <div class="save">
+                  <img src="icons/save.svg" alt="Save Icon" />
+                </div>
+              </div>
+            </div>
+
+            <div class="event-content">
+              <span>MOBILE APP</span>
+              <h3>
+                <a href="single-event.html"
+                  >Global Android Programmer Meetup 2020</a
+                >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco
+              </p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="event-header">
+              <img src="images/media/event.jpg" alt="Event" />
+              <div class="date">
+                <div class="date-content">
+                  <h2>20</h2>
+                  <p>NOV</p>
+                </div>
+                <div class="save">
+                  <img src="icons/save.svg" alt="Save Icon" />
+                </div>
+              </div>
+            </div>
+
+            <div class="event-content">
+              <span>MOBILE APP</span>
+              <h3>
+                <a href="single-event.html"
+                  >Global Android Programmer Meetup 2020</a
+                >
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a class="media-learn-more" href="media-events.html">Daha çox</a>
+      </div>
     </section>
 
     <footer class="container-fluid">
@@ -476,5 +594,6 @@
     </footer>
 
     <script src="utils/academic-calendar-filters.js"></script>
+    <script src="utils/media-selection-filters.js"></script>
   </body>
 </html>
