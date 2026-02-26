@@ -125,3 +125,87 @@
     margin-top: 120px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .our-mission {
+    gap: 40px !important;
+
+    .official-order {
+      margin-top: 40px !important;
+
+      h2 {
+        img {
+          width: 40px !important;
+          height: 40px !important;
+        }
+
+        font-size: 28px !important;
+        line-height: 56px !important;
+      }
+
+      p {
+        font-size: 16px !important;
+        line-height: 36px !important;
+      }
+    }
+
+    .our-mission-container {
+      margin-top: 40px !important;
+
+      .our-missions {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 16px !important;
+        width: 100% !important;
+
+        .our-mission-element {
+          width: 100% !important;
+          max-width: 343px !important;
+          height: auto !important;
+          max-height: none !important;
+          padding: 20px !important;
+
+          border-top-left-radius: 30px !important;
+          border-bottom-right-radius: 30px !important;
+
+          .our-mission-element-contents {
+            gap: 15px !important;
+
+            .left {
+              min-width: 50px !important;
+              height: 50px !important;
+
+              img {
+                width: 20px !important;
+                height: 20px !important;
+              }
+            }
+
+            .right {
+              width: 100% !important;
+              min-width: 0 !important;
+              height: auto !important;
+              gap: 8px !important;
+
+              h3 {
+                font-size: 20px !important;
+                line-height: 28px !important;
+              }
+
+              p {
+                font-size: 14px !important;
+                line-height: 20px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .our-vision,
+    .prespectives {
+      margin-top: 40px !important;
+    }
+  }
+}

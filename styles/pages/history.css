@@ -171,3 +171,90 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .about {
+    margin-top: 60px !important;
+    gap: 60px !important;
+
+    .about-header {
+      flex-direction: column;
+      gap: 16px !important;
+
+      h2 {
+        font-size: 28px !important;
+        line-height: 38px !important;
+        align-self: flex-start;
+      }
+
+      p {
+        font-size: 12px !important;
+      }
+    }
+
+    .about-container {
+      padding: 12px;
+      min-height: fit-content;
+      flex-direction: column;
+      gap: 20px;
+
+      .about-container-content {
+        width: 100%;
+        gap: 20px !important;
+
+        h3 {
+          font-size: 28px !important;
+          line-height: 49px !important;
+        }
+
+        p {
+          font-size: 12px;
+        }
+
+        .about-performance {
+          ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+      }
+      .about-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding: 12px;
+
+        img {
+          width: 150px !important;
+          height: 150px !important;
+        }
+      }
+    }
+  }
+
+  .infos {
+    grid-template-columns: 1fr;
+    justify-content: none;
+    gap: 20px !important;
+
+    .info {
+      max-width: 343px !important;
+      max-height: 234px !important;
+      min-height: 234px !important;
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+
+      h3 {
+        font-size: 32px !important;
+        line-height: 48px !important;
+      }
+
+      p {
+        font-size: 12px !important;
+        line-height: 17px !important;
+      }
+    }
+  }
+}

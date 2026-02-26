@@ -327,6 +327,38 @@
       }
     }
 
+    .mobile-about-content {
+      display: none;
+
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        color: #484848;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+
+        width: 248px;
+        height: 48px;
+        border-radius: 60px;
+        background: #d63832;
+
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 108%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+
     .about-center-info {
       position: absolute;
       width: 163px;
@@ -622,5 +654,212 @@
     text-align: center;
     text-decoration: none;
     color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    max-width: 343px;
+    height: 360px;
+    margin-top: 16px;
+    padding-inline: 12px;
+
+    h1 {
+      max-width: 273px;
+
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 45px;
+      letter-spacing: -2%;
+      color: #ffffff;
+    }
+  }
+
+  .media {
+    margin-top: 60px;
+    gap: 24px;
+
+    .media-header {
+      gap: 2px !important;
+
+      .media-header-content {
+        flex-direction: column;
+
+        h2 {
+          font-size: 28px !important;
+          align-self: flex-start;
+          line-height: 40px;
+        }
+
+        p {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+
+  .about {
+    margin-top: 60px;
+    gap: 24px;
+
+    .about-header {
+      gap: 2px !important;
+
+      .about-header-content {
+        flex-direction: column;
+
+        h2 {
+          font-size: 28px !important;
+          align-self: flex-start;
+          line-height: 40px;
+        }
+
+        p {
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    .about-content {
+      flex-direction: column;
+      gap: 40px;
+
+      .about-main-image {
+        width: 343px;
+        height: 200px;
+        max-width: 343px !important;
+        max-height: 200px !important;
+
+        min-width: 343px !important;
+        min-height: 200px !important;
+      }
+
+      .about-main-content {
+        img {
+          width: 343px;
+          height: 200px;
+          max-width: 343px !important;
+          max-height: 200px !important;
+
+          min-width: 343px !important;
+          min-height: 200px !important;
+        }
+
+        p,
+        a {
+          display: none;
+        }
+      }
+
+      .about-performance {
+        max-width: 343px;
+        ul {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 16px !important;
+
+          li {
+            width: 73px;
+            height: 63px;
+            padding: 11px;
+            gap: 8px;
+
+            h4 {
+              font-size: 24px !important;
+            }
+
+            p {
+              font-size: 12px !important;
+            }
+          }
+        }
+      }
+
+      .mobile-about-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .about-center-info {
+        top: 116px;
+        left: 90px;
+      }
+    }
+  }
+
+  .programs {
+    margin-top: 60px;
+    gap: 24px;
+
+    .programs-header {
+      gap: 2px !important;
+
+      .programs-header-content {
+        flex-direction: column;
+
+        h2 {
+          font-size: 28px !important;
+          align-self: flex-start;
+          line-height: 40px;
+        }
+
+        p {
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    .programs-list {
+      grid-template-columns: 1fr;
+
+      .program {
+        width: 343px !important;
+        max-width: 343px !important;
+
+        .program-content {
+          width: 327px !important;
+          max-width: 327px !important;
+          left: 8px !important;
+          gap: 7px !important;
+
+          h3 {
+            font-size: 20px !important;
+          }
+
+          p {
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .academic {
+    margin-top: 60px;
+    gap: 24px;
+
+    .academic-header {
+      gap: 2px !important;
+
+      .academic-header-content {
+        flex-direction: column;
+
+        h2 {
+          font-size: 28px !important;
+          align-self: flex-start;
+          line-height: 40px;
+        }
+
+        p {
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    .academic-calendar {
+      overflow: scroll;
+    }
   }
 }
