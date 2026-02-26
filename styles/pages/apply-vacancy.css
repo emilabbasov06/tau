@@ -122,3 +122,46 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .apply-form {
+    width: 90%;
+    max-width: 343px;
+    margin: 0 auto;
+    height: auto;
+    min-height: auto;
+    padding: 20px;
+    margin-top: 50px !important;
+
+    .form-header {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .form-item {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 100% !important;
+      margin-top: 15px;
+
+      label {
+        font-size: 12px !important;
+      }
+
+      input,
+      textarea {
+        width: 100% !important;
+        font-size: 14px !important;
+      }
+    }
+
+    .submit-form {
+      flex-direction: column;
+      gap: 20px;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -33,4 +33,32 @@
 
 .vacancies {
   margin-top: 120px;
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 450px) {
+  .breadcrumb {
+    padding: 12px !important;
+
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    h1 {
+      width: 321px !important;
+      max-width: 321px !important;
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    p {
+      width: 321px !important;
+      max-width: 321px !important;
+      font-size: 12px !important;
+      line-height: 23px !important;
+    }
+  }
+
+  .vacancies {
+    margin-top: 60px !important;
+  }
 }

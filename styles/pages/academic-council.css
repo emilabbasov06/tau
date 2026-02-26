@@ -261,7 +261,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 120px;
-  background: #f9fafb;
   padding-block: 40px;
 
   .teachers-inner {
@@ -463,6 +462,205 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .directory {
+    margin-top: 40px !important;
+
+    h3 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    .directors {
+      .director {
+        flex-direction: column !important;
+        .director-card {
+          width: 100% !important;
+          max-width: 343px !important;
+          height: auto !important;
+          min-height: 382px !important;
+          max-height: none !important;
+          padding: 12px !important;
+
+          .director-card-content {
+            width: 100% !important;
+            height: auto !important;
+            max-width: 100% !important;
+            max-height: none !important;
+            gap: 16px !important;
+
+            .director-card-header {
+              gap: 24px !important;
+              img {
+                width: 100px !important;
+                height: 100px !important;
+              }
+
+              .director-info {
+                gap: 12px !important;
+
+                h4 {
+                  font-size: 24px !important;
+                  line-height: 38px !important;
+                }
+
+                p {
+                  font-size: 20px !important;
+                  line-height: 38px !important;
+                }
+              }
+            }
+
+            .director-card-contact {
+              div {
+                width: 100% !important;
+                height: 32px !important;
+                padding: 8px !important;
+                border-radius: 10px;
+
+                img {
+                  width: 16px !important;
+                  height: 16px !important;
+                }
+
+                p {
+                  font-size: 16px !important;
+                  line-height: 15px !important;
+                }
+              }
+            }
+          }
+        }
+        .why-tau {
+          width: 343px;
+          height: fit-content;
+          max-height: fit-content;
+
+          h3 {
+            font-size: 28px !important;
+            line-height: 38px !important;
+          }
+
+          p,
+          li {
+            font-size: 12px !important;
+            line-height: 23px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .managers-container {
+    margin-top: 60px !important;
+
+    h3 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    .managers {
+      grid-template-columns: 1fr;
+
+      .manager {
+        width: 100% !important;
+        max-width: 343px !important;
+        height: auto !important;
+        min-height: 382px !important;
+        max-height: none !important;
+        padding: 12px !important;
+
+        .manager-card-content {
+          width: 100% !important;
+          height: auto !important;
+          max-width: 100% !important;
+          max-height: none !important;
+          gap: 16px !important;
+
+          .manager-card-header {
+            gap: 24px !important;
+            img {
+              width: 100px !important;
+              height: 100px !important;
+            }
+
+            .manager-info {
+              gap: 12px !important;
+
+              h4 {
+                font-size: 24px !important;
+                line-height: 38px !important;
+              }
+
+              p {
+                font-size: 20px !important;
+                line-height: 38px !important;
+              }
+            }
+          }
+
+          .manager-card-contact {
+            div {
+              width: 100% !important;
+              height: 32px !important;
+              padding: 8px !important;
+              border-radius: 10px;
+
+              img {
+                width: 16px !important;
+                height: 16px !important;
+              }
+
+              p {
+                font-size: 16px !important;
+                line-height: 15px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .teachers-container {
+    margin-top: 60px !important;
+
+    .teachers-inner {
+      h3 {
+        font-size: 28px !important;
+        line-height: 38px !important;
+      }
+
+      .teachers {
+        grid-template-columns: 1fr;
+
+        .teacher {
+          width: 343px !important;
+          max-width: 343px !important;
+        }
+      }
+    }
+  }
+
+  .lab-teachers {
+    margin-top: 60px !important;
+
+    h3 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    .teachers {
+      grid-template-columns: 1fr;
+
+      .teacher {
+        width: 343px !important;
+        max-width: 343px !important;
       }
     }
   }

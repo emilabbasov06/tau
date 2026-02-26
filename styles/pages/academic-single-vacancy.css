@@ -73,3 +73,39 @@
     color: #ffffff;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .single-vacancy {
+    margin-top: 60px !important;
+
+    .main-desc {
+      h1 {
+        font-size: 28px !important;
+        line-height: 38px !important;
+      }
+
+      p {
+        font-size: 12px !important;
+        line-height: 23px !important;
+      }
+    }
+
+    .responsibilities {
+      h3 {
+        font-size: 20px !important;
+        line-height: 38px !important;
+      }
+
+      ul {
+        li {
+          font-size: 12px !important;
+          line-height: 23px !important;
+        }
+      }
+    }
+
+    .apply {
+      align-self: center;
+    }
+  }
+}
