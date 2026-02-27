@@ -35,3 +35,24 @@
     color: #212121;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .scores,
+  .sophomore {
+    margin-top: 60px !important;
+
+    h2 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    p {
+      font-size: 12px !important;
+      line-height: 23px !important;
+    }
+
+    .scores-table {
+      overflow-x: scroll;
+    }
+  }
+}

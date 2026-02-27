@@ -602,4 +602,11 @@ table {
       }
     }
   }
+
+  .pagination {
+    .btn-next,
+    .btn-prev {
+      display: none;
+    }
+  }
 }

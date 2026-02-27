@@ -53,6 +53,7 @@
         flex-direction: column;
         gap: 12px;
         padding-inline: 19px;
+        padding-bottom: 10px !important;
 
         h3 {
           font-weight: 500;
@@ -75,6 +76,55 @@
             line-height: 28px;
             letter-spacing: 0%;
             color: #080a12;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .laboratory-container {
+    margin-top: 60px !important;
+
+    h2 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    .labs {
+      grid-template-columns: 1fr;
+
+      .lab {
+        width: 343px !important;
+        height: fit-content !important;
+        max-width: 343px !important;
+        max-height: fit-content !important;
+
+        .lab-image {
+          width: 343px !important;
+          height: fit-content !important;
+          max-width: 343px !important;
+          max-height: fit-content !important;
+
+          img {
+            width: 343px !important;
+            height: fit-content !important;
+            max-width: 343px !important;
+            max-height: fit-content !important;
+          }
+        }
+
+        .lab-content {
+          h3 {
+            font-size: 18px !important;
+          }
+
+          ul {
+            li {
+              font-size: 12px !important;
+              line-height: 23px !important;
+            }
           }
         }
       }

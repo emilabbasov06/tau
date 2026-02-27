@@ -45,3 +45,38 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .student {
+    margin-top: 60px !important;
+    flex-direction: column;
+
+    .student-content {
+      width: 100% !important;
+      max-width: 100% !important;
+
+      h2 {
+        font-size: 28px !important;
+        line-height: 38px !important;
+      }
+
+      p {
+        font-size: 12px !important;
+        line-height: 23px !important;
+      }
+    }
+
+    .student-image {
+      width: 100% !important;
+      height: fit-content !important;
+      max-width: 100% !important;
+      max-height: fit-content !important;
+
+      img {
+        width: 100% !important;
+        max-width: 100% !important;
+        max-height: 314px !important;
+      }
+    }
+  }
+}

@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    
+
     .student {
       width: 384px;
       height: 308px;
@@ -80,6 +80,41 @@
           line-height: 28px;
           letter-spacing: 0%;
           color: #212121;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .alumni {
+    margin-top: 60px !important;
+
+    h2 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    p {
+      font-size: 12px !important;
+      line-height: 23px !important;
+    }
+
+    .students {
+      grid-template-columns: 1fr;
+
+      .student {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        .student-image {
+          width: 100% !important;
+          max-width: 100% !important;
+
+          img {
+            width: 100% !important;
+            max-width: 100% !important;
+          }
         }
       }
     }

@@ -66,6 +66,10 @@
         color: #ffffff;
 
         .club-info {
+          display: flex;
+          flex-direction: column;
+          gap: 16px !important;
+
           h3 {
             a {
               font-weight: 500;
@@ -102,6 +106,51 @@
             width: 24px;
             height: 24px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .student-clubs {
+    margin-top: 60px !important;
+
+    h2 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    p {
+      font-size: 12px !important;
+      line-height: 23px !important;
+    }
+
+    .clubs {
+      grid-template-columns: 1fr;
+
+      .club {
+        width: 343px !important;
+        height: fit-content !important;
+        max-width: 343px !important;
+        max-height: fit-content !important;
+
+        .club-content {
+          .club-info {
+            h3 {
+              a {
+                font-size: 28px !important;
+                line-height: 38px !important;
+              }
+            }
+
+            p {
+              font-size: 18px !important;
+              line-height: 22px !important;
+            }
+          }
+
+          gap: 20px !important;
         }
       }
     }
