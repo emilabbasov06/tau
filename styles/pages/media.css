@@ -311,3 +311,33 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .media {
+    margin-top: 60px !important;
+
+    .media-header {
+      h2 {
+        font-size: 28px !important;
+        line-height: 38px !important;
+      }
+
+      .media-filters {
+        display: none !important;
+      }
+    }
+
+    .media-content {
+      .media-elements {
+        grid-template-columns: 1fr;
+
+        .media-element {
+          width: 100% !important;
+          height: fit-content !important;
+          max-width: 343px !important;
+          max-height: fit-content !important;
+        }
+      }
+    }
+  }
+}

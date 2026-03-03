@@ -17,7 +17,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 
-    .internship {
+    /* .internship {
       width: 587px;
       height: 1026px;
       max-width: 587px;
@@ -135,6 +135,121 @@
             line-height: 38px;
             letter-spacing: 0%;
             color: #212121;
+          }
+        }
+      }
+    } */
+
+    .internship {
+      width: 587px;
+      height: 1026px;
+      max-width: 587px;
+      max-height: 1026px;
+      border-radius: 26px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+
+      .internship-header {
+        position: relative;
+        z-index: 1;
+
+        img {
+          width: 100%;
+          max-height: 299px;
+          opacity: 1;
+          border-radius: 20px;
+          object-fit: cover;
+          display: block;
+        }
+
+        .status {
+          width: 100px;
+          height: 24px;
+          border-radius: 10px;
+          background: #deeafd;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 38px;
+          letter-spacing: 0%;
+          color: #2464f3;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 23px;
+          left: 16px;
+          z-index: 3;
+        }
+      }
+
+      .internship-details {
+        width: 95%;
+        margin: -40px auto 0 auto;
+        background: #ffffff;
+        border: 1px solid #cccccc;
+        border-radius: 16px;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 21px;
+
+        .internship-content {
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+          padding: 21px 21px 0 21px;
+
+          h3 {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #080a12;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: #212121;
+          }
+        }
+
+        .info {
+          padding-inline: 21px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          h4 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 38px;
+            letter-spacing: 0%;
+            color: #000000;
+          }
+
+          ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            li {
+              display: flex;
+              align-items: center;
+              gap: 14px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 38px;
+              letter-spacing: 0%;
+              color: #212121;
+            }
           }
         }
       }
@@ -333,6 +448,82 @@
               gap: 5px;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .internships-container {
+    margin-top: 60px;
+
+    h2 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    .internships {
+      grid-template-columns: 1fr;
+
+      .internship {
+        width: 343px !important;
+        height: fit-content !important;
+        max-width: 343px !important;
+        max-height: fit-content !important;
+
+        .internship-details {
+          width: 100% !important;
+
+          .internship-content {
+            h3 {
+              font-size: 24px !important;
+            }
+
+            p {
+              font-size: 16px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .application-process {
+    margin-top: 60px;
+
+    h2 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    .processes {
+      grid-template-columns: 1fr;
+      align-items: center;
+
+      .process {
+        width: 100% !important;
+        max-width: 343px !important;
+      }
+    }
+  }
+
+  .partner-companies {
+    margin-top: 60px;
+
+    h2 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    .partners-container {
+      .partners {
+        grid-template-columns: 1fr;
+        align-items: center;
+
+        .partner-company {
+          width: 100% !important;
+          max-width: 343px !important;
         }
       }
     }

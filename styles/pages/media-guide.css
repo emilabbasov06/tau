@@ -106,3 +106,33 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .logotip,
+  .media-guide-logo,
+  .potential-logos {
+    margin-top: 60px !important;
+
+    h2 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    p {
+      font-size: 12px !important;
+      line-height: 23px !important;
+    }
+  }
+
+  .potential-logos {
+    .upload {
+      flex-direction: column;
+      gap: 16px !important;
+
+      button {
+        width: 100% !important;
+        max-width: 343px !important;
+      }
+    }
+  }
+}

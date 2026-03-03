@@ -36,4 +36,50 @@
       display: block;
     }
   }
+
+  .upload {
+    width: 248px;
+    height: 48px;
+    border-radius: 60px;
+    background: #d63832;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 108%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .research {
+    margin-top: 60px !important;
+
+    h2 {
+      font-size: 28px !important;
+      line-height: 38px !important;
+    }
+
+    p {
+      font-size: 12px !important;
+      line-height: 23px !important;
+    }
+
+    .research-gallery {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px !important;
+
+      img {
+        width: 164px !important;
+        height: 128px !important;
+        border-radius: 20px !important;
+      }
+    }
+  }
 }

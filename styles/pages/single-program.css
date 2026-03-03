@@ -605,7 +605,6 @@
 
           display: flex;
           flex-direction: column;
-          gap: 60px;
 
           .announcement-header {
             border-top-left-radius: 20px;
@@ -720,7 +719,7 @@
                 flex-direction: column;
                 gap: 24px;
 
-                h2 {
+                h3 {
                   display: flex;
                   align-items: center;
                   gap: 12px;
@@ -832,6 +831,277 @@
             }
             .apply-btn {
               background: #0038ff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .single-program-content {
+    margin-top: 60px !important;
+    .tab-buttons {
+      .tab-btn {
+        max-width: 178px !important;
+        max-height: 72px !important;
+        font-size: 14px !important;
+
+        .icon {
+          width: 32px !important;
+          height: 32px !important;
+
+          img {
+            width: 20px !important;
+            height: 20px !important;
+          }
+        }
+      }
+    }
+
+    .tabs-container {
+      .tab-default {
+        .why-this-program {
+          h2 {
+            font-size: 28px !important;
+            line-height: 38px !important;
+          }
+
+          .reasons {
+            grid-template-columns: 1fr;
+
+            .reason {
+              width: 100% !important;
+              height: fit-content !important;
+              max-width: 343px !important;
+              max-height: fit-content !important;
+              border-left-width: 1px !important;
+              padding: 10px !important;
+
+              .reason-icon {
+                width: 32px !important;
+                height: 32px !important;
+                min-width: 32px !important;
+                min-height: 32px !important;
+
+                img {
+                  width: 20px !important;
+                  height: 20px !important;
+                }
+              }
+
+              .reason-content {
+                h3 {
+                  font-size: 24px !important;
+                  line-height: 28px !important;
+                }
+
+                p {
+                  font-size: 12px !important;
+                  line-height: 18px !important;
+                }
+              }
+            }
+          }
+        }
+
+        .about-program {
+          .about,
+          .goals,
+          .future-careers {
+            h2 {
+              font-size: 20px !important;
+              line-height: 38px !important;
+            }
+
+            p,
+            li {
+              font-size: 12px !important;
+              line-height: 23px !important;
+            }
+          }
+
+          .future-careers {
+            .careers {
+              grid-template-columns: 1fr;
+
+              .career {
+                width: 100% !important;
+                height: fit-content !important;
+                max-width: 343px !important;
+                max-height: fit-content !important;
+              }
+            }
+          }
+        }
+      }
+
+      #tab-1.active {
+        .our-academic {
+          .our-academic-content {
+            h2 {
+              font-size: 20px !important;
+              line-height: 38px !important;
+            }
+
+            p {
+              font-size: 12px !important;
+              line-height: 23px !important;
+            }
+          }
+
+          .teachers {
+            grid-template-columns: 1fr;
+
+            .teacher {
+              width: 100% !important;
+              max-width: 343px !important;
+            }
+          }
+        }
+      }
+
+      #tab-2.active,
+      #tab-3.active {
+        .lesson-schedule {
+          .week,
+          .year {
+            overflow-x: scroll;
+
+            h2 {
+            }
+          }
+        }
+      }
+
+      #tab-4.active {
+        .labs {
+          grid-template-columns: 1fr;
+
+          .lab {
+            width: 100% !important;
+            height: fit-content !important;
+            max-width: 343px !important;
+            max-height: fit-content !important;
+
+            .lab-image {
+              width: 343px !important;
+              height: fit-content !important;
+              max-width: 343px !important;
+              max-height: fit-content !important;
+
+              img {
+                width: 343px !important;
+                height: fit-content !important;
+                max-width: 343px !important;
+                max-height: fit-content !important;
+              }
+            }
+
+            .lab-content {
+              h3 {
+                font-size: 18px !important;
+              }
+
+              ul {
+                li {
+                  font-size: 12px !important;
+                  line-height: 23px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #tab-5.active {
+        h2 {
+          font-size: 28px !important;
+          line-height: 38px !important;
+        }
+
+        .rules {
+          width: 100% !important;
+          height: fit-content !important;
+          max-width: 343px !important;
+          max-height: fit-content !important;
+        }
+
+        .exam-calendar {
+          overflow-x: scroll;
+        }
+      }
+
+      #tab-6.active {
+        .announcements {
+          grid-template-columns: 1fr;
+
+          .announcement {
+            width: 100% !important;
+            height: fit-content !important;
+            max-width: 343px !important;
+            max-height: fit-content !important;
+
+            .announcement-header {
+              padding: 16px !important;
+
+              .announcement-header-top {
+                gap: 16px !important;
+
+                .header-top-content {
+                  gap: 5px !important;
+
+                  h2 {
+                    font-size: 28px !important;
+                  }
+
+                  p {
+                    font-size: 20px !important;
+                  }
+                }
+              }
+
+              .announcement-short-info {
+                .dates {
+                  flex-direction: column;
+                  gap: 14px !important;
+
+                  div {
+                    width: 100% !important;
+                  }
+                }
+              }
+            }
+
+            .announcement-main-content {
+              padding: 16px !important;
+
+              .announcement-info {
+                width: 100% !important;
+                max-width: 311px !important;
+                height: fit-content !important;
+                max-height: fit-content !important;
+                flex-direction: column;
+                gap: 24px !important;
+
+                .info {
+                  ul {
+                    li {
+                      font-size: 20px !important;
+                    }
+                  }
+                }
+              }
+
+              .apply-btn {
+                width: 310px;
+                height: 47px;
+                max-width: 310px;
+                max-height: 47px;
+
+                align-self: center;
+              }
             }
           }
         }
