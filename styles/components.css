@@ -22,10 +22,3 @@
     min-width: 343px;
   }
 }
-
-@media screen and (min-width: 451px) and (max-width: 1024px) {
-  .container {
-    width: calc(100% - 64px);
-    max-width: 960px;
-  }
-}
