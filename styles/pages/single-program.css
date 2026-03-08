@@ -843,6 +843,13 @@
   .single-program-content {
     margin-top: 60px !important;
     .tab-buttons {
+      overflow-x: scroll;
+
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
       .tab-btn {
         max-width: 178px !important;
         max-height: 72px !important;
@@ -874,7 +881,8 @@
             .reason {
               width: 100% !important;
               height: fit-content !important;
-              max-width: 343px !important;
+              width: 100% !important;
+              min-width: 343px !important;
               max-height: fit-content !important;
               border-left-width: 1px !important;
               padding: 10px !important;
@@ -929,7 +937,6 @@
               .career {
                 width: 100% !important;
                 height: fit-content !important;
-                max-width: 343px !important;
                 max-height: fit-content !important;
               }
             }
@@ -956,7 +963,8 @@
 
             .teacher {
               width: 100% !important;
-              max-width: 343px !important;
+              width: 100% !important;
+              min-width: 343px !important;
             }
           }
         }
@@ -975,26 +983,28 @@
         }
       }
 
-      #tab-4.active {
+      /* #tab-4.active {
         .labs {
           grid-template-columns: 1fr;
 
           .lab {
             width: 100% !important;
             height: fit-content !important;
-            max-width: 343px !important;
+            width: 100% !important;
             max-height: fit-content !important;
 
             .lab-image {
               width: 343px !important;
               height: fit-content !important;
-              max-width: 343px !important;
+              width: 100% !important;
+              min-width: 343px !important;
               max-height: fit-content !important;
 
               img {
                 width: 343px !important;
                 height: fit-content !important;
-                max-width: 343px !important;
+                width: 100% !important;
+                min-width: 343px !important;
                 max-height: fit-content !important;
               }
             }
@@ -1013,6 +1023,51 @@
             }
           }
         }
+      } */
+
+      #tab-4.active {
+        .labs {
+          display: grid !important;
+          grid-template-columns: repeat(2, 1fr) !important;
+          gap: 12px !important;
+
+          .lab {
+            width: 100% !important;
+            min-width: 0 !important;
+            height: auto !important;
+            max-height: none !important;
+
+            .lab-image {
+              width: 100% !important;
+              height: 100px !important;
+              min-width: 0 !important;
+
+              img {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover;
+              }
+            }
+
+            .lab-content {
+              padding: 8px !important;
+              gap: 4px !important;
+
+              h3 {
+                font-size: 14px !important;
+                line-height: 18px !important;
+              }
+
+              ul {
+                padding-left: 15px !important;
+                li {
+                  font-size: 10px !important;
+                  line-height: 14px !important;
+                }
+              }
+            }
+          }
+        }
       }
 
       #tab-5.active {
@@ -1024,7 +1079,8 @@
         .rules {
           width: 100% !important;
           height: fit-content !important;
-          max-width: 343px !important;
+          width: 100% !important;
+          min-width: 343px !important;
           max-height: fit-content !important;
         }
 
@@ -1036,11 +1092,13 @@
       #tab-6.active {
         .announcements {
           grid-template-columns: 1fr;
+          gap: 16px !important;
 
           .announcement {
             width: 100% !important;
             height: fit-content !important;
-            max-width: 343px !important;
+            width: 100% !important;
+            min-width: 343px !important;
             max-height: fit-content !important;
 
             .announcement-header {

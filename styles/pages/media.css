@@ -329,13 +329,30 @@
 
     .media-content {
       .media-elements {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px !important;
 
         .media-element {
           width: 100% !important;
-          height: fit-content !important;
-          max-width: 343px !important;
-          max-height: fit-content !important;
+          min-width: 0 !important;
+          height: auto !important;
+
+          .media-image {
+            height: 120px !important;
+          }
+
+          .media-element-content {
+            padding: 8px;
+            gap: 8px;
+            h3 a {
+              font-size: 14px !important;
+              line-height: 18px !important;
+            }
+            p {
+              font-size: 10px !important;
+              line-height: 14px !important;
+            }
+          }
         }
       }
     }

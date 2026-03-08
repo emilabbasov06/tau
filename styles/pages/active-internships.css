@@ -142,7 +142,7 @@
 
     .internship {
       width: 587px;
-      height: 1026px;
+      height: fit-content;
       max-width: 587px;
       max-height: 1026px;
       border-radius: 26px;
@@ -469,7 +469,8 @@
       .internship {
         width: 343px !important;
         height: fit-content !important;
-        max-width: 343px !important;
+        width: 100% !important;
+        min-width: 343px !important;
         max-height: fit-content !important;
 
         .internship-details {
@@ -503,7 +504,8 @@
 
       .process {
         width: 100% !important;
-        max-width: 343px !important;
+        width: 100% !important;
+        min-width: 343px !important;
       }
     }
   }
@@ -523,7 +525,8 @@
 
         .partner-company {
           width: 100% !important;
-          max-width: 343px !important;
+          width: 100% !important;
+          min-width: 343px !important;
         }
       }
     }

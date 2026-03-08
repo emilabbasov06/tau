@@ -481,7 +481,8 @@
         flex-direction: column !important;
         .director-card {
           width: 100% !important;
-          max-width: 343px !important;
+          width: 100% !important;
+          min-width: 343px !important;
           height: auto !important;
           min-height: 382px !important;
           max-height: none !important;
@@ -569,7 +570,8 @@
 
       .manager {
         width: 100% !important;
-        max-width: 343px !important;
+        width: 100% !important;
+        min-width: 343px !important;
         height: auto !important;
         min-height: 382px !important;
         max-height: none !important;
@@ -641,7 +643,8 @@
 
         .teacher {
           width: 343px !important;
-          max-width: 343px !important;
+          width: 100% !important;
+          min-width: 343px !important;
         }
       }
     }
@@ -660,7 +663,8 @@
 
       .teacher {
         width: 343px !important;
-        max-width: 343px !important;
+        width: 100% !important;
+        min-width: 343px !important;
       }
     }
   }

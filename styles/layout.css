@@ -386,6 +386,7 @@ table {
 
   tbody {
     td {
+      width: fit-content;
       padding: 16px;
       border-bottom: 1px solid #eff4f8;
       border-right: 1px solid #eff4f8;
@@ -395,6 +396,7 @@ table {
       line-height: 20px;
       letter-spacing: 0%;
       color: #2d3748;
+      text-wrap-mode: nowrap;
 
       &:last-child {
         border-right: none;
@@ -522,9 +524,9 @@ table {
   }
 
   .breadcrumb {
-    width: 342px !important;
+    width: calc(100% - 32px) !important;
     height: 207px;
-    max-width: 342px !important;
+    min-width: 343px;
     min-height: 207px;
     margin-top: 16px;
 
@@ -607,6 +609,76 @@ table {
     .btn-next,
     .btn-prev {
       display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 1024px) {
+  header {
+    .header-top {
+      .container {
+        .header-top-left {
+          gap: 30px;
+        }
+      }
+    }
+
+    .header-bottom {
+      .container {
+        nav {
+          ul {
+            gap: 20px;
+
+            li {
+              p,
+              a {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .lang-change {
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .container {
+      .footer-main-contents {
+        .footer-main-contents-top {
+          gap: 30px;
+
+          .footer-links {
+            gap: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .simple-paragraph {
+    h2 {
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+
+  table {
+    thead {
+      th {
+        font-size: 11px;
+      }
+    }
+
+    tbody {
+      td {
+        font-size: 13px;
+      }
     }
   }
 }

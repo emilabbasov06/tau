@@ -25,10 +25,15 @@
       border-radius: 18px;
       border-width: 1px;
       border: 1px solid #2464f3;
+      transition: 0.5s all;
 
       display: flex;
       flex-direction: column;
       gap: 22px;
+
+      &:hover {
+        border-left-width: 6px;
+      }
 
       .project-header {
         position: relative;
@@ -156,7 +161,8 @@
 
       .project {
         width: 100% !important;
-        max-width: 343px !important;
+        width: 100% !important;
+        min-width: 343px !important;
         height: fit-content !important;
         max-height: fit-content !important;
 

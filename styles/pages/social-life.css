@@ -132,7 +132,8 @@
       .club {
         width: 343px !important;
         height: fit-content !important;
-        max-width: 343px !important;
+        width: 100% !important;
+        min-width: 343px !important;
         max-height: fit-content !important;
 
         .club-content {

@@ -240,7 +240,8 @@
         .event {
           width: 100% !important;
           height: fit-content !important;
-          max-width: 343px !important;
+          width: 100% !important;
+          min-width: 343px !important;
 
           .event-content {
             gap: 12px !important;

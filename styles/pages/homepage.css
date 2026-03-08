@@ -158,6 +158,7 @@
           height: 80px;
           border: none;
           background: none;
+          cursor: pointer;
         }
 
         a {
@@ -497,6 +498,10 @@
           object-fit: cover;
         }
 
+        a {
+          text-decoration: none !important;
+        }
+
         .program-content {
           position: absolute;
           width: 516px;
@@ -532,6 +537,30 @@
             letter-spacing: 0%;
             text-align: center;
             color: #484848;
+          }
+
+          .learn-more {
+            width: 148px;
+            height: 32px;
+            border-radius: 60px;
+            background: #d63832;
+
+            display: none;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #ebe5db;
+          }
+
+          @media screen and (max-width: 450px) {
+            .learn-more {
+              display: flex !important;
+            }
           }
         }
       }
@@ -659,7 +688,8 @@
 
 @media screen and (max-width: 450px) {
   .hero {
-    max-width: 343px;
+    width: calc(100% - 32px);
+    min-width: 343px;
     height: 360px;
     margin-top: 16px;
     padding-inline: 12px;
@@ -696,6 +726,115 @@
         }
       }
     }
+
+    .media-datas {
+      .media-news,
+      .media-announcements {
+        .news-list,
+        .announcement-list {
+          /* .news,
+          .announcement {
+            width: 100% !important;
+            height: 100% !important;
+            max-width: 206px !important;
+            max-height: 371px !important;
+
+            .news-image,
+            .announcement-image {
+              width: 100% !important;
+              height: 100% !important;
+              min-width: 206px !important;
+              max-height: 244px !important;
+              border-top-left-radius: 16px;
+              border-top-right-radius: 16px;
+            }
+
+            .news-content,
+            .announcement-content {
+              a {
+                font-size: 16px !important;
+                line-height: 32px !important;
+              }
+
+              p {
+                font-size: 12px !important;
+                line-height: 24px !important;
+              }
+            }
+          } */
+
+          .news,
+          .announcement {
+            width: 206px !important;
+            height: 371px !important;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            .news-image,
+            .announcement-image {
+              width: 206px !important;
+              height: 210px !important;
+              flex-shrink: 0;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .news-content,
+            .announcement-content {
+              flex-grow: 1;
+              display: flex;
+              flex-direction: column;
+              padding: 12px;
+
+              a {
+                font-size: 16px !important;
+                line-height: 20px !important;
+                margin-bottom: 8px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              }
+
+              p {
+                font-size: 12px !important;
+                line-height: 16px !important;
+              }
+            }
+          }
+        }
+
+        .media-news-controllers,
+        .media-announcements-controllers {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          button {
+            display: none;
+          }
+
+          a {
+            width: fit-content !important;
+            height: 48px !important;
+            border-radius: 60px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 16px !important;
+            line-height: 24px !important;
+          }
+        }
+      }
+    }
   }
 
   .about {
@@ -725,20 +864,28 @@
       gap: 40px;
 
       .about-main-image {
-        width: 343px;
+        width: 100% !important;
         height: 200px;
-        max-width: 343px !important;
+        min-width: 343px !important;
         max-height: 200px !important;
+
+        z-index: 3;
 
         min-width: 343px !important;
         min-height: 200px !important;
       }
 
       .about-main-content {
+        width: 100% !important;
+        height: 200px;
+        min-width: 343px !important;
+        max-height: 200px !important;
+        z-index: 10;
+
         img {
-          width: 343px;
+          width: 100% !important;
           height: 200px;
-          max-width: 343px !important;
+          min-width: 343px !important;
           max-height: 200px !important;
 
           min-width: 343px !important;
@@ -752,7 +899,8 @@
       }
 
       .about-performance {
-        max-width: 343px;
+        width: calc(100% - 32px);
+        min-width: 343px;
         ul {
           width: 100%;
           display: grid;
@@ -783,8 +931,10 @@
       }
 
       .about-center-info {
-        top: 116px;
+        /* top: 116px; */
+        top: 90px;
         left: 90px;
+        z-index: 5;
       }
     }
   }
@@ -816,13 +966,20 @@
 
       .program {
         width: 343px !important;
-        max-width: 343px !important;
+        width: 100% !important;
+        min-width: 343px !important;
 
         .program-content {
-          width: 327px !important;
+          width: 90% !important;
           max-width: 327px !important;
-          left: 8px !important;
+          left: 50% !important;
+          transform: translateX(-50%);
           gap: 7px !important;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
 
           h3 {
             font-size: 20px !important;
@@ -830,6 +987,10 @@
 
           p {
             font-size: 12px !important;
+          }
+
+          .learn-more {
+            align-self: flex-start;
           }
         }
       }
@@ -861,5 +1022,23 @@
     .academic-calendar {
       overflow: scroll;
     }
+  }
+}
+
+/* SCROLLING SETUP */
+
+.news-list,
+.announcement-list {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .news,
+  .announcement {
+    flex-shrink: 0;
   }
 }

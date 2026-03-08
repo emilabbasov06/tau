@@ -126,7 +126,8 @@
 @media screen and (max-width: 450px) {
   .apply-form {
     width: 90%;
-    max-width: 343px;
+    width: calc(100% - 32px);
+    min-width: 343px;
     margin: 0 auto;
     height: auto;
     min-height: auto;

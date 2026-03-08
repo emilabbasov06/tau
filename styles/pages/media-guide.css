@@ -131,7 +131,8 @@
 
       button {
         width: 100% !important;
-        max-width: 343px !important;
+        width: 100% !important;
+        min-width: 343px !important;
       }
     }
   }

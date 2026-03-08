@@ -237,7 +237,8 @@
     gap: 20px !important;
 
     .info {
-      max-width: 343px !important;
+      width: 100% !important;
+      min-width: 343px !important;
       max-height: 234px !important;
       min-height: 234px !important;
 

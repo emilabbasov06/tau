@@ -129,7 +129,8 @@
       grid-template-columns: 1fr;
 
       .filter-wrapper {
-        max-width: 343px;
+        width: calc(100% - 32px);
+        min-width: 343px;
       }
     }
 

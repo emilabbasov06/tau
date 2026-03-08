@@ -484,7 +484,8 @@
         .project {
           width: 100% !important;
           height: fit-content !important;
-          max-width: 343px !important;
+          width: 100% !important;
+          min-width: 343px !important;
 
           .project-details {
             width: 100% !important;

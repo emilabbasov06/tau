@@ -380,7 +380,8 @@
         flex-direction: column !important;
         .director-card {
           width: 100% !important;
-          max-width: 343px !important;
+          width: 100% !important;
+          min-width: 343px !important;
           height: auto !important;
           min-height: 382px !important;
           max-height: none !important;
@@ -455,7 +456,8 @@
 
       .program {
         width: 100% !important;
-        max-width: 343px !important;
+        width: 100% !important;
+        min-width: 343px !important;
 
         .program-contents {
           width: 100% !important;
@@ -492,7 +494,8 @@
 
         .card {
           width: 100% !important;
-          max-width: 343px !important;
+          width: 100% !important;
+          min-width: 343px !important;
           order: 2;
 
           .card-contents {
