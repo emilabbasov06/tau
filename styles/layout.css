@@ -619,6 +619,8 @@ table {
       padding-block: 14px;
 
       .container {
+        gap: 24px;
+
         .header-top-left {
           gap: 40px;
 
@@ -633,14 +635,22 @@ table {
       padding-block: 20px;
 
       .container {
+        gap: 24px;
+
+        .logo {
+          img {
+            width: 50px;
+          }
+        }
+
         nav {
           ul {
-            gap: 28px;
+            gap: 24px;
 
             li {
               p,
               a {
-                font-size: 18px;
+                font-size: 14px;
               }
             }
           }
@@ -648,7 +658,11 @@ table {
 
         .lang-change {
           p {
-            font-size: 16px;
+            font-size: 14px;
+          }
+
+          img {
+            width: 20px;
           }
         }
       }
@@ -685,10 +699,37 @@ table {
         gap: 24px;
 
         .footer-main-contents-top {
-          gap: 40px;
+          gap: 32px;
+          flex-wrap: wrap;
+
+          .footer-logo {
+            a {
+              img {
+                width: 110px;
+              }
+            }
+          }
 
           .footer-links {
-            gap: 28px;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 24px;
+            column-gap: 28px;
+
+            .footer-link {
+              h4 {
+                font-size: 18px;
+              }
+
+              ul {
+                li {
+                  a,
+                  p {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
           }
         }
 
