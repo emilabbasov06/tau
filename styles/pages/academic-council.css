@@ -669,3 +669,123 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .directory {
+    margin-top: 100px;
+
+    .directors {
+      .director {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+
+        .director-card,
+        .why-tau {
+          width: 100%;
+          max-width: 100%;
+          height: fit-content !important;
+          max-height: fit-content !important;
+        }
+
+        .director-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: min-content;
+        
+          .director-card-content {
+            align-items: center;
+            justify-content: center;
+            .director-card-header {
+              display: flex;
+              justify-content: center;
+          
+              img {
+                width: 180px;
+                max-width: 180px;
+                height: 180px;
+                max-height: 180px;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .managers-container {
+    margin-top: 100px;
+    gap: 32px;
+
+    h3 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    .managers {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      align-self: center !important;
+
+      .manager {
+        max-width: 100% !important;
+
+
+        .manager-card-content {
+          .manager-card-contact {
+            .manager-phone, .manager-email {
+              width: 100%;
+              max-width: 95% !important;
+              align-self: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .teachers-container {
+    margin-top: 100px;
+
+    .teachers-inner {
+      h3 {
+        font-size: 32px;
+        line-height: 48px;
+      }
+
+      .teachers {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+
+        .teacher {
+          width: 100%;
+          max-width: none;
+        }
+      }
+    }
+  }
+
+  .lab-teachers {
+    margin-top: 100px;
+    gap: 32px;
+
+    h3 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    .teachers {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+
+      .teacher {
+        width: 100%;
+        max-width: none;
+      }
+    }
+  }
+}

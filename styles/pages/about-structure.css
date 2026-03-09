@@ -154,6 +154,62 @@
       }
     }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 100px;
+    gap: 32px;
+
+    h3 {
+      font-size: 36px;
+      line-height: 56px;
+    }
+
+    .directors {
+      .director {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+
+        
+        .director-card,
+        .why-tau {
+          width: 100%;
+          max-width: 100%;
+          height: fit-content !important;
+          max-height: fit-content !important;
+
+          
+        }
+
+        .director-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: min-content;
+        
+          .director-card-content {
+            align-items: center;
+            justify-content: center;
+            .director-card-header {
+              display: flex;
+              justify-content: center;
+          
+              img {
+                width: 180px;
+                max-width: 180px;
+                height: 180px;
+                max-height: 180px;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
 }
 
 .programs-container {
@@ -242,6 +298,32 @@
           font-size: 16px;
           line-height: 21px;
           letter-spacing: 0%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 100px;
+    gap: 32px;
+
+    h3 {
+      font-size: 36px;
+      line-height: 56px;
+    }
+
+    .programs {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+
+      .program {
+        width: 100%;
+        max-width: 100% !important;
+
+        .program-contents {
+          width: 100% !important;
         }
       }
     }
@@ -360,6 +442,46 @@
       }
     }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 100px;
+    gap: 32px;
+
+    h3 {
+      font-size: 36px;
+      line-height: 56px;
+    }
+
+    .department-elements {
+
+      .department-element {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+
+        .card {
+          .card-contents {
+            .profession, .description {
+              font-size: 14px !important;
+              line-height: 24px !important;
+            }
+          }
+        }
+
+        .department-element-contents {
+          width: fit-content;
+          height: fit-content;
+          max-width: 100%;
+          max-height: 100%;
+
+          p {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -458,6 +580,7 @@
         width: 100% !important;
         width: 100% !important;
         min-width: 343px !important;
+        justify-self: center !important;
 
         .program-contents {
           width: 100% !important;
@@ -479,6 +602,8 @@
     .department-elements {
       .department-element {
         flex-direction: column !important;
+        align-items: center !important;
+
 
         .department-element-contents {
           order: 1;

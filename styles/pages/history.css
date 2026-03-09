@@ -172,6 +172,86 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    margin-top: 100px;
+    gap: 80px;
+
+    .about-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+
+      h2 {
+        font-size: 44px;
+        line-height: 64px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        max-width: 520px;
+      }
+    }
+
+    .about-container {
+      gap: 72px;
+      padding: 24px;
+
+      .about-container-content {
+        gap: 24px;
+
+        h3 {
+          font-size: 32px;
+          line-height: 56px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        .about-performance {
+          ul {
+            flex-wrap: wrap;
+            gap: 20px;
+
+            li {
+              width: 132px;
+              height: 132px;
+            }
+          }
+        }
+      }
+
+      .about-images {
+        align-self: center;
+        grid-template-columns: repeat(2, 140px);
+        gap: 16px;
+
+        img {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    }
+  }
+
+  .infos {
+    margin-top: 100px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    justify-items: center;
+
+    .info {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      min-height: 260px;
+    }
+  }
+}
+
 @media screen and (max-width: 450px) {
   .about {
     margin-top: 60px !important;
@@ -212,6 +292,7 @@
         }
 
         .about-performance {
+          align-self: center;
           ul {
             display: grid;
             grid-template-columns: repeat(2, 1fr) !important;
@@ -222,6 +303,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr) !important;
         padding: 12px;
+        align-self: center;
+
 
         img {
           width: 150px !important;

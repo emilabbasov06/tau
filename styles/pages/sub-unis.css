@@ -102,6 +102,67 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sub-unis {
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    .left {
+      max-width: 285px !important;
+      height: fit-content !important;
+      min-height: 285px !important;
+      position: relative;
+      align-self: center;
+      img {
+        object-fit: cover;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      img:nth-child(1) {
+        width: 229px;
+        height: 229px;
+        z-index: 1;
+      }
+
+      img:nth-child(2) {
+        width: 121px;
+        height: 121px;
+        top: 114.79px;
+        left: 163.57px;
+        z-index: 2;
+      }
+    }
+  }
+
+  .sub-unis .sub-unis-content {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    gap: 80px;
+  }
+
+  .sub-unis .sub-unis-content h2 {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .sub-unis .sub-unis-content .unis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .sub-unis .sub-unis-content .unis .uni {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .sub-unis {
     flex-direction: column;
@@ -140,7 +201,8 @@
     }
 
     .sub-unis-content {
-      max-width: 345px !important;
+      width: 100% !important;
+      max-width: 100% !important;
       height: fit-content;
 
       h2 {
@@ -148,9 +210,14 @@
       }
 
       .unis {
+        display: grid;
         grid-template-columns: 1fr;
-
+        align-items: center;
+      
         .uni {
+          width: 100% !important;
+          max-width: 100% !important;
+          align-self: center !important;
           box-shadow: 4px 11px 35px 0px #00000012 !important;
         }
       }

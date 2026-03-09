@@ -22,3 +22,10 @@
     min-width: 343px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: calc(100% - 64px);
+    min-width: 704px;
+  }
+}

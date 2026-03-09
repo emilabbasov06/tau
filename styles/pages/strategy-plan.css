@@ -54,3 +54,39 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .strategy-plan {
+    margin-top: 100px;
+    gap: 32px;
+
+    .plan {
+      h2 {
+        font-size: 44px;
+        line-height: 64px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    .plan-red {
+      margin-top: 32px;
+      padding: 24px;
+
+      p {
+        font-size: 22px;
+        line-height: 36px;
+      }
+    }
+
+    .simple-paragraph:last-of-type {
+      p {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+}

@@ -198,3 +198,52 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .campus-gallery {
+    margin-top: 100px;
+    gap: 32px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 44px;
+    }
+
+    .gallery {
+      .container {
+        padding-block: 56px;
+
+        h1 {
+          font-size: 52px;
+          line-height: 72px;
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-auto-rows: 320px;
+          gap: 20px;
+          max-width: 1000px;
+
+          .grid {
+            &.two-columns-one-row {
+              grid-column: span 2;
+            }
+
+            &.two-rows-one-column {
+              grid-row: span 2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .image {
+    margin-top: 100px;
+
+    img {
+      max-width: 960px;
+      max-height: 480px;
+    }
+  }
+}

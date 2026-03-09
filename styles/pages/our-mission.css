@@ -126,6 +126,95 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .our-mission {
+    margin-top: 80px;
+    gap: 32px;
+
+    .official-order {
+      margin-top: 80px;
+      padding: 24px;
+
+      p {
+        font-size: 22px;
+        line-height: 36px;
+      }
+    }
+
+    .our-mission-container {
+      margin-top: 96px;
+      gap: 48px;
+
+      .our-mission-container-header {
+        h2 {
+          font-size: 44px;
+          line-height: 64px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+
+      .our-missions {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 20px;
+
+        .our-mission-element {
+          width: 100%;
+          max-width: none;
+          height: auto;
+          max-height: none;
+          padding: 20px;
+
+          .our-mission-element-contents {
+            align-items: flex-start;
+            gap: 16px;
+
+            .left {
+              min-width: 56px;
+              height: 56px;
+            }
+
+            .right {
+              width: 100%;
+              min-width: 0;
+              height: auto;
+              gap: 8px;
+
+              h3 {
+                font-size: 26px;
+                line-height: 36px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .our-vision,
+    .prespectives {
+      margin-top: 96px;
+
+      h2 {
+        font-size: 44px;
+        line-height: 64px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 450px) {
   .our-mission {
     gap: 40px !important;

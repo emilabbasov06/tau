@@ -191,3 +191,47 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .student-projects {
+    margin-top: 100px;
+    gap: 32px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 44px;
+    }
+
+    .projects {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+
+      .project {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        max-height: none;
+
+        .project-header {
+          img {
+            max-height: 320px;
+          }
+        }
+
+        .project-content {
+          gap: 12px;
+
+          h3 {
+            font-size: 22px;
+            line-height: 32px;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+}

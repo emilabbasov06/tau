@@ -471,6 +471,7 @@
       width: 586px;
       max-width: 586px;
       height: 392px;
+      min-height: 392px;
 
       &:hover {
         div {
@@ -683,6 +684,277 @@
     text-align: center;
     text-decoration: none;
     color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    height: 520px !important;
+    max-height: 520px;
+
+    .container {
+      padding-inline: 32px;
+    }
+
+    h1 {
+      max-width: 520px;
+      font-size: 48px;
+      line-height: 72px;
+      color: #ffffff;
+    }
+  }
+
+  .media-header, .about-header, .programs-header, .academic-header {
+    .media-header-content, .about-header-content, .programs-header-content, .academic-header-content {
+      p {
+        width: 40% !important;
+      }
+    }
+  }
+
+  .media {
+    margin-top: 96px;
+    gap: 32px;
+
+    .media-header {
+      .media-header-content {
+        gap: 32px;
+
+        h2 {
+          font-size: 44px;
+          line-height: 64px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    .media-datas {
+      gap: 56px;
+
+      .media-news,
+      .media-announcements {
+        gap: 32px;
+
+        .news-list,
+        .announcement-list {
+          gap: 16px;
+
+          .news,
+          .announcement {
+            width: 320px;
+            max-width: 320px;
+            height: 440px;
+            max-height: 440px;
+
+            .news-image,
+            .announcement-image {
+              height: 260px;
+            }
+
+            .news-content,
+            .announcement-content {
+              gap: 12px;
+              padding: 14px;
+
+              a {
+                font-size: 22px;
+                line-height: 28px;
+              }
+
+              p {
+                font-size: 14px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+
+        .media-news-controllers,
+        .media-announcements-controllers {
+          button {
+            width: 48px;
+            height: 64px;
+          }
+
+          a {
+            height: 56px;
+            padding-inline: 28px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    margin-top: 96px;
+    gap: 32px;
+
+    .about-header {
+      .about-header-content {
+        gap: 32px;
+
+        h2 {
+          font-size: 44px;
+          line-height: 64px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+
+      .about-main-image {
+        width: 100%;
+        max-width: 640px;
+        height: 420px;
+        min-width: auto;
+        min-height: auto;
+      }
+
+      .about-main-content {
+        width: 100%;
+        max-width: 640px;
+        gap: 32px;
+
+        img {
+          width: 100%;
+          height: 360px;
+          max-width: 640px;
+          max-height: 360px;
+          min-width: auto;
+          min-height: auto;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 26px;
+        }
+
+        a {
+          width: 220px;
+          height: 48px;
+          font-size: 20px;
+        }
+      }
+
+      .about-performance {
+        ul {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 24px;
+
+          li {
+            width: 152px;
+            height: 120px;
+          }
+        }
+      }
+
+      .about-center-info {
+        top: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .programs {
+    margin-top: 96px;
+    gap: 32px;
+
+    .programs-header {
+      .programs-header-content {
+        gap: 32px;
+
+        h2 {
+          font-size: 44px;
+          line-height: 64px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    .programs-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+
+      .program {
+        width: 100%;
+        max-width: none;
+        height: fit-content !important;
+
+        div {
+          img {
+            height: 260px;
+          }
+
+          .program-content {
+            width: 90%;
+            max-width: none;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 190px;
+            padding: 24px 16px;
+            gap: 16px;
+
+            h3 {
+              font-size: 22px;
+              line-height: 28px;
+            }
+
+            p {
+              font-size: 14px;
+              line-height: 22px;
+            }
+
+            .learn-more {
+              display: flex;
+              width: 140px;
+              height: 32px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .academic {
+    margin-top: 96px;
+    gap: 32px;
+
+    .academic-header {
+      .academic-header-content {
+        gap: 32px;
+
+        h2 {
+          font-size: 44px;
+          line-height: 64px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
   }
 }
 

@@ -139,3 +139,31 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .academic-calendar {
+    margin-top: 100px;
+    gap: 20px;
+
+    h3 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    .calendar-filters {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+
+      .filter-wrapper {
+        width: 100%;
+        max-width: none;
+        height: 48px;
+        max-height: 48px;
+      }
+    }
+
+    .calendar {
+      overflow-x: auto;
+    }
+  }
+}
