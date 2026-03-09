@@ -109,3 +109,46 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* All tablet overrides grouped here */
+
+  .single-vacancy {
+    margin-top: 80px;
+
+    .main-desc {
+      h1 {
+        font-size: 40px;
+        line-height: 60px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+
+    .responsibilities {
+      h3 {
+        font-size: 22px;
+        line-height: 32px;
+      }
+
+      ul {
+        gap: 16px;
+
+        li {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+    }
+
+    .apply {
+      width: 220px;
+      height: 44px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+}

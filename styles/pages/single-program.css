@@ -467,6 +467,7 @@
           display: flex;
           flex-direction: column;
           gap: 24px;
+          overflow-x: scroll;
 
           h2 {
             font-weight: 500;
@@ -1086,6 +1087,269 @@
 
         .exam-calendar {
           overflow-x: scroll;
+        }
+      }
+
+      #tab-6.active {
+        .announcements {
+          grid-template-columns: 1fr;
+          gap: 16px !important;
+
+          .announcement {
+            width: 100% !important;
+            height: fit-content !important;
+            width: 100% !important;
+            min-width: 343px !important;
+            max-height: fit-content !important;
+
+            .announcement-header {
+              padding: 16px !important;
+
+              .announcement-header-top {
+                gap: 16px !important;
+
+                .header-top-content {
+                  gap: 5px !important;
+
+                  h2 {
+                    font-size: 28px !important;
+                  }
+
+                  p {
+                    font-size: 20px !important;
+                  }
+                }
+              }
+
+              .announcement-short-info {
+                .dates {
+                  flex-direction: column;
+                  gap: 14px !important;
+
+                  div {
+                    width: 100% !important;
+                  }
+                }
+              }
+            }
+
+            .announcement-main-content {
+              padding: 16px !important;
+
+              .announcement-info {
+                width: 100% !important;
+                max-width: 311px !important;
+                height: fit-content !important;
+                max-height: fit-content !important;
+                flex-direction: column;
+                gap: 24px !important;
+
+                .info {
+                  ul {
+                    li {
+                      font-size: 20px !important;
+                    }
+                  }
+                }
+              }
+
+              .apply-btn {
+                width: 310px;
+                height: 47px;
+                max-width: 310px;
+                max-height: 47px;
+
+                align-self: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* All tablet overrides grouped here */
+
+  .single-program-content {
+    margin-top: 80px;
+    gap: 80px;
+
+    .tab-buttons {
+      overflow-x: scroll;
+
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+
+      button {
+        width: 160px;
+        max-width: none;
+        height: 130px;
+        font-size: 15px;
+
+        .icon {
+          width: 52px;
+          height: 52px;
+
+          img {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+    }
+
+    .tabs-container {
+      .tab-default {
+        gap: 80px;
+
+        .why-this-program {
+          gap: 32px;
+
+          h2 {
+            font-size: 32px;
+            line-height: 42px;
+          }
+
+          .reasons {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+
+            .reason {
+              width: 100%;
+              max-width: none;
+              height: auto;
+              max-height: none;
+              padding: 28px 30px;
+
+              .reason-content {
+                h3 {
+                  font-size: 28px;
+                  line-height: 36px;
+                }
+
+                p {
+                  font-size: 16px;
+                  line-height: 24px;
+                }
+              }
+            }
+          }
+        }
+
+        .about-program {
+          gap: 32px;
+
+          .about,
+          .goals,
+          .future-careers {
+            h2 {
+              font-size: 32px;
+              line-height: 40px;
+            }
+
+            p,
+            li {
+              font-size: 16px;
+              line-height: 26px;
+            }
+          }
+
+          .future-careers {
+            .careers {
+              grid-template-columns: repeat(2, minmax(0, 1fr));
+              gap: 20px;
+
+              .career {
+                width: 100%;
+                max-width: none;
+                height: auto;
+                max-height: none;
+              }
+            }
+          }
+        }
+      }
+
+      #tab-1.active {
+        .our-academic-content {
+          h2 {
+            font-size: 32px;
+            line-height: 40px;
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+
+        .teachers {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 20px;
+
+          .teacher {
+            width: 100%;
+            max-width: none;
+          }
+        }
+      }
+
+      #tab-2.active,
+      #tab-3.active {
+        .lesson-schedule {
+          padding: 20px;
+
+          .year,
+          .week {
+            h2 {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+
+      #tab-4.active {
+        .labs {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 20px;
+
+          .lab {
+            width: 100%;
+            max-width: none;
+            height: auto;
+            max-height: none;
+
+            .lab-image {
+              width: 100%;
+              max-width: none;
+              height: 260px;
+              max-height: 260px;
+            }
+
+            .lab-content {
+              h3 {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+
+      #tab-5.active {
+        .exam-content {
+          h2 {
+            font-size: 30px;
+            line-height: 38px;
+          }
+
+          .rules {
+            max-width: none;
+          }
         }
       }
 

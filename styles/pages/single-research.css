@@ -83,3 +83,41 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* All tablet overrides grouped here */
+
+  .research {
+    margin-top: 80px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .research-gallery {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        max-height: none;
+        object-fit: cover;
+      }
+    }
+
+    .upload {
+      width: 220px;
+      height: 44px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+}

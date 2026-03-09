@@ -281,3 +281,61 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* All tablet overrides grouped here */
+
+  .events-container {
+    margin-top: 72px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .events-full-container {
+      flex-direction: column;
+      align-items: stretch;
+
+      .events {
+        grid-template-columns: 1fr;
+
+        .event {
+          width: 100%;
+          max-width: none;
+
+          .event-content {
+            gap: 20px;
+
+            .event-header {
+              height: 320px;
+            }
+
+            .event-text {
+              h3 a {
+                font-size: 32px;
+                line-height: 42px;
+              }
+
+              p {
+                font-size: 16px;
+                line-height: 24px;
+              }
+            }
+
+            .learn-more {
+              width: 220px;
+              height: 44px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      .events-category {
+        width: 100%;
+        max-width: none;
+      }
+    }
+  }
+}
